@@ -1563,7 +1563,7 @@
       lockNoticeEl.append("В лоці (");
       if (lockInfo.orderId) {
         const link = document.createElement("a");
-        link.href = `[manowar.hover.to](https://manowar.hover.to/orders/${encodeURIComponent(String(lockInfo.orderId) || ""))}`;
+        link.href = `https://manowar.hover.to/orders/${encodeURIComponent(String(lockInfo.orderId ?? ""))}`;
         link.target = "_blank"; link.rel = "noopener noreferrer";
         link.textContent = `Order ${lockInfo.orderId}`;
         link.style.color = "inherit"; link.style.fontWeight = "700"; link.style.textDecoration = "underline";
